@@ -152,7 +152,7 @@ class Block:
         self.add_connections(rand)
 
         self.black = (0, 0, 0)
-        self.xnum_box = 40
+        self.xnum_box = 10
         self.ynum_box = 20
 
 
