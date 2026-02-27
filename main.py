@@ -65,6 +65,12 @@ class Tetris:
             font = pygame.font.SysFont(None, 24)
             img = font.render('paused', True, self.black)
             self.window.blit(img, (dist + pause_size/3, dist + pause_size / 2))
+        pause_size = self.box_size * 4
+        dist = (self.width - pause_size) / 2
+        pygame.draw.rect(self.window, self.grey, (dist, dist, pause_size, pause_size))
+        font = pygame.font.SysFont(None, 24)
+        img = font.render('TESTING', True, self.black)
+        self.window.blit(img, (dist + pause_size / 3, dist + pause_size / 2))
         pygame.display.update()
 
     def draw_colors(self):
